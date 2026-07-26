@@ -1,16 +1,28 @@
-# React + Vite
+# 🎬 NxtFlix - Movie Streaming Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NxtFlix is a modern React-based movie web application built with Vite and React Router. It mimics popular streaming platforms by offering user authentication, real-time movie search, interactive genre filtering, a persistent Watch Later list, and detailed view pages.
 
-Currently, two official plugins are available:
+## ✨ Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔐 **JWT Authentication & Protected Routes:** Restricts core application pages (`Home`, `WatchLater`, `MovieDetails`) to authenticated users using cookie-based token checks (`js-cookie`).
+- 🔍 **Real-Time Movie Search & Filtering:** Filter movies instantly by title search query or by specific genres (Action, Sci-Fi, Drama, etc.).
+- 📌 **Watch Later Management:** Add or remove movies from a personalized Watch Later list stored locally in state and `localStorage`.
+- 🔔 **Interactive Toast Notifications:** Context-driven popup alerts inform users when movies are added or removed from their list.
+- 📱 **Movie Details Page:** Dynamic route rendering (`/movies/:id`) displaying rating, year, genre, and full movie details.
+- 🚫 **404 Handling:** Integrated error handling displaying a custom "Page Not Found" screen for invalid search queries or missing routes without header navigation clutter.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend Library:** React 18
+- **Build Tool:** Vite
+- **Routing:** React Router v6
+- **State Management:** React Context API (`WatchLaterContext`)
+- **Authentication:** `js-cookie`
+- **Styling:** Dynamic CSS-in-JS & CSS Modules
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/NaraDeepthi/NXTFLIX.git](https://github.com/NaraDeepthi/NXTFLIX.git)
+   cd nxtflix
